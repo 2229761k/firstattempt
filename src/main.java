@@ -12,7 +12,7 @@ public class main {
 
 	}
 
-    public int[][] askUserInterface() {
+    public static int[][] askUserInterface() {
     	String n;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("which position?");
@@ -22,12 +22,15 @@ public class main {
 		}
 		String[] rawInput =sc.nextLine().split(",");
         int[][] intInput = new int[3][3];
-        return intInput[rawInput[0]][rawInput[1]] = 1;
+        int x = Integer.parseInt(rawInput[0]);
+        int y = Integer.parseInt(rawInput[1]);
+        intInput[x][y] = 1;
+        return intInput;
 
     }
     	
     	 
-    public void printMatrix(int matrix[][]) {
+    public static void printMatrix(int matrix[][]) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 System.out.print(matrix[i][j] + " ");
