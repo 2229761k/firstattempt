@@ -12,6 +12,27 @@ public class main {
 
 	}
 
+    public static void startGame() {
+        boolean player1 = True;
+        boolean player2 = False;
+
+        // TODO: task2:
+
+
+    }
+
+    public static boolean checkGameCondition() {
+        // check if map has end condition.
+        /*
+
+            2 1 1
+            2 0 0
+            2 1 0
+
+        */
+
+    }
+
     public static int[][] askUserInterface() {
     	String n;
 		Scanner sc = new Scanner(System.in);
@@ -22,6 +43,9 @@ public class main {
 		}
 		String[] rawInput =sc.nextLine().split(",");
         int[][] intInput = new int[3][3];
+        
+        // TODO: task1:
+        // check x and y boundary. if x and y is greater than 3, retry for an input
         int x = Integer.parseInt(rawInput[0]);
         int y = Integer.parseInt(rawInput[1]);
         intInput[x][y] = 1;
